@@ -8,21 +8,22 @@ namespace Estructura_de_datos
 {
     internal class clsNodo
     {
-        private Int32 dato;
+
+
+        private Int32 cod;
         private clsNodo sig;
         private clsNodo ant;
+        private string nom;
+        private string tram;
 
 
-
-       
-
-        public Int32 Dato
+        public Int32 Codigo
         {
-            get { return dato; }
-            set { dato = value; }
+            get { return cod; }
+            set { cod = value; }
         }
 
-       
+
         public clsNodo Siguiente
         {
             get { return sig; }
@@ -34,7 +35,30 @@ namespace Estructura_de_datos
             get { return ant; }
             set { ant = value; }
         }
+
+        public string Nombre
+        {
+            get { return nom; }
+            set { nom = value; }
+        }
+
+        public string Tramite
+        {
+            get { return tram; }
+            set { tram = value; }
+        }
+
+        public clsNodo Izquierdo
+        {
+            get { return sig; }
+            set { sig = value; }
+        }
+
+        public clsNodo Derecho
+        {
+            get { return ant; }
+            set { ant = value; }
+        }
     }
-
-
+    
 }

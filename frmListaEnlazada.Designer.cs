@@ -1,6 +1,6 @@
 ﻿namespace Estructura_de_datos
 {
-    partial class frmListaSimple
+    partial class frmListaEnlazada
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstNombres = new System.Windows.Forms.ListBox();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -36,6 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtCodigoBorrar = new System.Windows.Forms.TextBox();
             this.lblTramite = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -50,20 +50,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtCodigoBorrar = new System.Windows.Forms.TextBox();
+            this.dgvDatos1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lstNombres
-            // 
-            this.lstNombres.FormattingEnabled = true;
-            this.lstNombres.Location = new System.Drawing.Point(54, 352);
-            this.lstNombres.Name = "lstNombres";
-            this.lstNombres.Size = new System.Drawing.Size(229, 225);
-            this.lstNombres.TabIndex = 15;
             // 
             // dgvDatos
             // 
@@ -72,10 +68,10 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvDatos.Location = new System.Drawing.Point(349, 352);
+            this.dgvDatos.Location = new System.Drawing.Point(536, 334);
             this.dgvDatos.Name = "dgvDatos";
-            this.dgvDatos.Size = new System.Drawing.Size(431, 225);
-            this.dgvDatos.TabIndex = 14;
+            this.dgvDatos.Size = new System.Drawing.Size(431, 252);
+            this.dgvDatos.TabIndex = 18;
             // 
             // Column1
             // 
@@ -95,20 +91,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 323);
+            this.label1.Location = new System.Drawing.Point(53, 305);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 13);
-            this.label1.TabIndex = 13;
+            this.label1.TabIndex = 17;
             this.label1.Text = "Listado de personas";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
-            this.groupBox1.Location = new System.Drawing.Point(51, 30);
+            this.groupBox1.Location = new System.Drawing.Point(129, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(729, 276);
-            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabIndex = 16;
             this.groupBox1.TabStop = false;
             // 
             // groupBox4
@@ -126,6 +122,13 @@
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos Eliminados";
+            // 
+            // txtCodigoBorrar
+            // 
+            this.txtCodigoBorrar.Location = new System.Drawing.Point(204, 48);
+            this.txtCodigoBorrar.Name = "txtCodigoBorrar";
+            this.txtCodigoBorrar.Size = new System.Drawing.Size(84, 20);
+            this.txtCodigoBorrar.TabIndex = 16;
             // 
             // lblTramite
             // 
@@ -260,39 +263,58 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // txtCodigoBorrar
+            // dgvDatos1
             // 
-            this.txtCodigoBorrar.Location = new System.Drawing.Point(204, 48);
-            this.txtCodigoBorrar.Name = "txtCodigoBorrar";
-            this.txtCodigoBorrar.Size = new System.Drawing.Size(84, 20);
-            this.txtCodigoBorrar.TabIndex = 16;
+            this.dgvDatos1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dgvDatos1.Location = new System.Drawing.Point(41, 334);
+            this.dgvDatos1.Name = "dgvDatos1";
+            this.dgvDatos1.Size = new System.Drawing.Size(431, 252);
+            this.dgvDatos1.TabIndex = 19;
             // 
-            // frmListaSimple
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Tramite";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // frmListaEnlazada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 608);
-            this.Controls.Add(this.lstNombres);
+            this.ClientSize = new System.Drawing.Size(996, 616);
+            this.Controls.Add(this.dgvDatos1);
             this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmListaSimple";
-            this.Text = "frmListaSimple";
-            this.Load += new System.EventHandler(this.frmListaSimple_Load);
+            this.Name = "frmListaEnlazada";
+            this.Text = "frmListaEnlazada";
+            this.Load += new System.EventHandler(this.frmListaEnlazada_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lstNombres;
         private System.Windows.Forms.DataGridView dgvDatos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -300,6 +322,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox txtCodigoBorrar;
         private System.Windows.Forms.Label lblTramite;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button btnEliminar;
@@ -314,6 +337,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.TextBox txtCodigoBorrar;
+        private System.Windows.Forms.DataGridView dgvDatos1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }

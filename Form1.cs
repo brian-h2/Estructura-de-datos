@@ -55,5 +55,28 @@ namespace Estructura_de_datos
             frmGrafo frmGrafo = new frmGrafo();
             frmGrafo.ShowDialog();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listaEnlazadaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple simple = new frmListaSimple();
+            simple.ShowDialog();
+        }
+
+        private void listaDoblementeEnlazadaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaEnlazada enlazada = new frmListaEnlazada();
+            enlazada.ShowDialog();
+        }
+
+        private void arbolBinarioDeBusquedaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbol arbol = new frmArbol();
+            arbol.ShowDialog();
+        }
     }
 }
