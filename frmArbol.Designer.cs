@@ -36,15 +36,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblElementos = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnEquilibrar = new System.Windows.Forms.Button();
+            this.cmbElementos = new System.Windows.Forms.ComboBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.lstArbolPreOrden = new System.Windows.Forms.ListBox();
             this.lstArbolInOrden = new System.Windows.Forms.ListBox();
             this.lstArbolPostOrden = new System.Windows.Forms.ListBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.cmbElementos = new System.Windows.Forms.ComboBox();
-            this.btnEquilibrar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +120,43 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Elemento Eliminado";
             // 
+            // btnEquilibrar
+            // 
+            this.btnEquilibrar.Location = new System.Drawing.Point(23, 205);
+            this.btnEquilibrar.Name = "btnEquilibrar";
+            this.btnEquilibrar.Size = new System.Drawing.Size(190, 47);
+            this.btnEquilibrar.TabIndex = 17;
+            this.btnEquilibrar.Text = "Equiilibrar";
+            this.btnEquilibrar.UseVisualStyleBackColor = true;
+            this.btnEquilibrar.Click += new System.EventHandler(this.btnEquilibrar_Click);
+            // 
+            // cmbElementos
+            // 
+            this.cmbElementos.FormattingEnabled = true;
+            this.cmbElementos.Location = new System.Drawing.Point(101, 27);
+            this.cmbElementos.Name = "cmbElementos";
+            this.cmbElementos.Size = new System.Drawing.Size(121, 21);
+            this.cmbElementos.TabIndex = 16;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(23, 142);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(190, 47);
+            this.btnBuscar.TabIndex = 13;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(23, 83);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(190, 44);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnAgregar);
@@ -135,6 +172,16 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nuevo Elemento";
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(30, 205);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(190, 47);
+            this.btnAgregar.TabIndex = 18;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // lstArbolPreOrden
             // 
@@ -159,50 +206,6 @@
             this.lstArbolPostOrden.Name = "lstArbolPostOrden";
             this.lstArbolPostOrden.Size = new System.Drawing.Size(248, 199);
             this.lstArbolPostOrden.TabIndex = 11;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(23, 142);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(190, 47);
-            this.btnBuscar.TabIndex = 13;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(23, 83);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(190, 44);
-            this.btnEliminar.TabIndex = 14;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // cmbElementos
-            // 
-            this.cmbElementos.FormattingEnabled = true;
-            this.cmbElementos.Location = new System.Drawing.Point(101, 27);
-            this.cmbElementos.Name = "cmbElementos";
-            this.cmbElementos.Size = new System.Drawing.Size(121, 21);
-            this.cmbElementos.TabIndex = 16;
-            // 
-            // btnEquilibrar
-            // 
-            this.btnEquilibrar.Location = new System.Drawing.Point(23, 205);
-            this.btnEquilibrar.Name = "btnEquilibrar";
-            this.btnEquilibrar.Size = new System.Drawing.Size(190, 47);
-            this.btnEquilibrar.TabIndex = 17;
-            this.btnEquilibrar.Text = "Equiilibrar";
-            this.btnEquilibrar.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(30, 205);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(190, 47);
-            this.btnAgregar.TabIndex = 18;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
             // frmArbol
             // 

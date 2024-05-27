@@ -78,5 +78,17 @@ namespace Estructura_de_datos
             frmArbol arbol = new frmArbol();
             arbol.ShowDialog();
         }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaBaseDeDatos frmConsultaBaseDeDatos = new frmConsultaBaseDeDatos();
+            frmConsultaBaseDeDatos.ShowDialog();
+        }
+
+        private void operacionesConTablasDeBasesDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaseDeDatos frmBaseDeDatos = new frmBaseDeDatos();
+            frmBaseDeDatos.ShowDialog();
+        }
     }
 }

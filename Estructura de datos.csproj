@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsArbol.cs" />
+    <Compile Include="clsBaseDeDatos.cs" />
     <Compile Include="clsCola.cs" />
     <Compile Include="clsListaDoble.cs" />
     <Compile Include="clsListaSimple.cs" />
@@ -63,11 +64,23 @@
     <Compile Include="frmArbol.Designer.cs">
       <DependentUpon>frmArbol.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBaseDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaseDeDatos.Designer.cs">
+      <DependentUpon>frmBaseDeDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCola.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCola.Designer.cs">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaBaseDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaBaseDeDatos.Designer.cs">
+      <DependentUpon>frmConsultaBaseDeDatos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDatosDelDesarrollador.cs">
       <SubType>Form</SubType>
