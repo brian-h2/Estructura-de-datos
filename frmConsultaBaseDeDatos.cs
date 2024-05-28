@@ -16,5 +16,11 @@ namespace Estructura_de_datos
         {
             InitializeComponent();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsBaseDeDatos clsBaseDeDatos = new clsBaseDeDatos();
+            clsBaseDeDatos.Listar(dgvDatos,txtValue.Text);
+        }
     }
 }

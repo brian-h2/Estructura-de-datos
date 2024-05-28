@@ -127,8 +127,14 @@
     <EmbeddedResource Include="frmArbol.resx">
       <DependentUpon>frmArbol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBaseDeDatos.resx">
+      <DependentUpon>frmBaseDeDatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCola.resx">
       <DependentUpon>frmCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaBaseDeDatos.resx">
+      <DependentUpon>frmConsultaBaseDeDatos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosDelDesarrollador.resx">
       <DependentUpon>frmDatosDelDesarrollador.cs</DependentUpon>
